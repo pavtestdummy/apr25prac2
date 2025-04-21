@@ -11,8 +11,10 @@ public class EmpDetails {
 	@GetMapping("/myapp/{empno}")
 	public Employee getDetails(@PathVariable("empno")String empno)
 	{
-		System.out.println("in getempno "+empno);
+		System.out.println("in getempno-- "+empno);
 		return new Employee(empno,"Pav_"+ empno);
 		
 	}
+	
+	
 }
